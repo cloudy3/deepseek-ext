@@ -1,17 +1,16 @@
-# VS Code Extension: DeepSeek R1 AI Assistant
+# VS Code Extension: DeepSeek Chat in Your Editor
 
 ## TL;DR
 
-Supercharge your VS Code with **DeepSeek R1**! This extension brings an AI-powered assistant to your editor, offering smart code completions, debugging help, and natural language queries. Think of it as your coding sidekick, but smarter.
+Ever wished you could chat with DeepSeek without leaving your code? Now you can! This extension brings DeepSeek’s magic directly into VS Code. Ask questions, get answers, and look productive while secretly just chatting with an AI.
 
 ---
 
-## Features
+## What It Does
 
-- **Smart Code Suggestions**: AI-driven completions that actually make sense.
-- **Ask Anything**: Type `//ask` and get answers in plain English.
-- **Debug Smarter**: Let the AI spot bugs before you do.
-- **Customizable**: Tweak it to fit your coding style.
+- **Prompt & Answer**: Type a prompt, get a response. That’s it. No fluff, no frills.
+- **Stay in Flow**: No more tab-switching to ask DeepSeek for help. Laziness wins again.
+- **Local Power**: Runs DeepSeek locally using **Ollama**. No API keys, no fuss.
 
 ---
 
@@ -25,29 +24,36 @@ Supercharge your VS Code with **DeepSeek R1**! This extension brings an AI-power
    ```bash
    npm install
    ```
-3. Add your DeepSeek R1 API key in settings.
+3. Make sure you have **Ollama** set up with the DeepSeek model.
 4. Hit `F5` to run the extension.
 
 ---
 
-## Usage
+## How to Use
 
-- **Code Suggestions**: Hit `Ctrl+Space`.
-- **Ask Questions**: Type `//ask [your question]`.
-- **Debug**: Highlight code, right-click, and let the AI work its magic.
+1. Open the command palette (`Ctrl+Shift+P` or `Cmd+Shift+P`).
+2. Search for **“Ask DeepSeek”**.
+3. Type your prompt.
+4. Pretend you’re a genius when the answer pops up.
+
+---
+
+## Why This Exists
+
+Because switching tabs to ask an AI for help is _so_ 2024. This extension is for developers who value efficiency (or just hate alt-tabbing). Plus, running it locally means you can chat with DeepSeek even when the internet decides to take a nap.
 
 ---
 
 ## Contributing
 
-Got ideas? Open an issue or submit a PR. Let’s make this extension even cooler!
+Found a bug? Have a feature request? Open an issue or submit a PR. Or just tell your friends about it. That works too.
 
 ---
 
 ## License
 
-MIT. Do whatever you want, just don’t blame us.
+MIT. Do whatever you want, but maybe don’t use it to cheat on your homework.
 
 ---
 
-Coding just got a whole lot smarter. Enjoy! 🚀
+Chat smarter, not harder. Happy coding! 🚀
