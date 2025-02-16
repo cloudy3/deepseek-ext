@@ -56,13 +56,85 @@ function getWebViewContent(): string {
   <head>
     <meta charset="UTF-8">
     <style>
-      body {
-        font-family: sans-serif;
-        margin: 1rem;
-      }
-      #prompt { width: 100%; box-sizing: border-box; }
-      #response { border: 1px solid #ccc; padding: 0.5rem; margin-top: 1rem; }
-    </style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #1e1e1e;
+      color: #ffffff;
+      margin: 0;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+      box-sizing: border-box;
+    }
+
+    h2 {
+      color: #4CAF50;
+      margin-bottom: 20px;
+      font-size: 1.5em;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #4CAF50;
+      border-radius: 8px;
+      background-color: #2d2d2d;
+      color: #ffffff;
+      font-size: 14px;
+      resize: none;
+      margin-bottom: 16px;
+      outline: none;
+    }
+
+    textarea::placeholder {
+      color: #888;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    #response {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #2d2d2d;
+      border-radius: 8px;
+      color: #ffffff;
+      font-size: 14px;
+      line-height: 1.5;
+      min-height: 100px;
+      white-space: pre-wrap;
+    }
+
+    .loader {
+      border: 4px solid #2d2d2d;
+      border-top: 4px solid #4CAF50;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      animation: spin 1s linear infinite;
+      margin: 20px auto;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
   </head>
   <body>
     <h2>DeepSeek VS Code Extension</h2>
